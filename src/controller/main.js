@@ -79,7 +79,7 @@ function layThongTinNV() {
     validation.checkEmpty(
       luongCB,
       "tbLuongCB",
-      "(*) Vui lòng Vui lòng không để trống."
+      "(*) Vui lòng không để trống."
     ) &&
     validation.checkNumber(luongCB, "tbLuongCB", "(*) Chỉ được nhập số.") &&
     validation.checkMinMax(
@@ -99,11 +99,7 @@ function layThongTinNV() {
 
   //giolam
   isValid &=
-    validation.checkEmpty(
-      gioLam,
-      "tbGiolam",
-      "(*) Vui lòng Vui lòng không để trống."
-    ) &&
+    validation.checkEmpty(gioLam, "tbGiolam", "(*) Vui lòng không để trống.") &&
     validation.checkNumber(gioLam, "tbGiolam", "(*) Chỉ được nhập số.") &&
     validation.checkMinMax(
       gioLam,
